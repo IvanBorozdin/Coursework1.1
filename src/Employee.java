@@ -2,7 +2,7 @@ public class Employee {
     private  String fio;
     private int department;
     private  int salary;
-    public int id;
+    private int id;
     private static int counter;
 
 

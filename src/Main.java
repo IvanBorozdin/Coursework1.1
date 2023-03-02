@@ -1,6 +1,7 @@
 public class Main {
+    private static Employee[] employees = new Employee[10];
     public static void main(String[] args) {
-        Employee[] employees = new Employee[10];
+
         employees[0] = new Employee("Иванов Иван Иванович", 1, 33232);
         employees[1] = new Employee("Петров Сергей Васильевич", 2, 40000);
         employees[2] = new Employee("Сидоров Вектор Павлович", 3, 27000);
@@ -16,7 +17,7 @@ public class Main {
             System.out.println(e);
         }
         System.out.println(sumSalary(employees));
-        System.out.println(sumSalary(employees)/ employees.length);
+        System.out.println((double) sumSalary(employees)/ employees.length);
         System.out.println(minSalary(employees));
         System.out.println(maxSalary(employees));
         printFio(employees);
